@@ -1,6 +1,7 @@
 {
   "name": "website-jali",
   "version": "1.0.0",
+  "homepage": "https://jalilalc.github.io/website/",
   "description": "",
   "main": "index.js",
   "scripts": {
