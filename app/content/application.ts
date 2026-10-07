@@ -18,7 +18,7 @@ export const applicationSections = [
 
     document: {
       href: `${baseUrl}documents/applications/membership-pdf.pdf`,
-      secondaryHref: `${baseUrl}documents/applications/membership-applicationw.docx`,
+      secondaryHref: `${baseUrl}documents/applications/membership-application-word.docx`,
       title: "Membership application form",
       description:
         "Download the current membership application form.",
