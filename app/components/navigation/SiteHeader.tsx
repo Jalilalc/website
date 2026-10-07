@@ -68,7 +68,7 @@ export function SiteHeader({
         >
             <img
               src={`${base}images/brand/JaliLogo.webp`}
-              alt="Jali LALC Logo"
+              alt="Jali LALC"
               className="h-12 w-auto object-contain sm:h-14"
             />
           {/* <span

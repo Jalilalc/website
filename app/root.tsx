@@ -52,7 +52,7 @@ export const links: Route.LinksFunction = () => [
   {
     rel: "apple-touch-icon",
     sizes: "180x180",
-    href: "/apple-touch-icon.png",
+    href: `${baseUrl}apple-touch-icon.png`,
   },
 ];
 
