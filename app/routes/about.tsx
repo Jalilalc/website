@@ -5,13 +5,14 @@ import { IntroductionSection } from "~/components/sections/IntroductionSection";
 import { ContentImageSection } from "~/components/sections/ContentImageSection";
 import { aboutHeroSlides } from "~/content/about";
 
+const base = import.meta.env.BASE_URL;
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "About | Jali LALC" },
     {
       name: "description",
-      content: "Welcome to React Router!",
+      content: "Jali LALC About Page.",
     },
   ];
 }
@@ -61,7 +62,7 @@ export default function About() {
 
         ]}
         image={{
-            src: "/images/brand/Ngunya Jargoon IPA - Primary logo.webp",
+            src: `${base}images/brand/Ngunya Jargoon IPA - Primary logo.webp`,
             alt: "Ngunya Jargoon IPA official logo",
             objectPosition: "object-cover",
         }}
@@ -85,7 +86,7 @@ export default function About() {
 
         ]}
         image={{
-        src: "/images/brand/Primary logo - light.webp",
+        src: `${base}images/brand/Primary logo - light.webp`,
         alt: "Nyangbul Land and Sea Ranger logo",
         fit: "contain",
         objectPosition: "object-center",
@@ -102,7 +103,7 @@ export default function About() {
         ]}
         
         image={{
-        src: "/images/brand/JaliLogo.webp",
+        src: `${base}images/brand/JaliLogo.webp`,
         alt: "Jali logo",
         fit: "contain",
         objectPosition: "object-center",

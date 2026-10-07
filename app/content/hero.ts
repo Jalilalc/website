@@ -1,5 +1,7 @@
 import type { SlideshowItem } from "../types/slideshow";
 
+const base = import.meta.env.BASE_URL;
+
 export const heroSlides = [
   {
     id: "slide-one",
@@ -14,10 +16,10 @@ export const heroSlides = [
     image: {
       // Files inside public/ are referenced from the root "/".
       // Do not include "public" in this path.
-      src: "/images/hero/PaperBark1.webp",
+      src: `${base}images/hero/PaperBark1.webp`,
 
       // Use an empty alt when the image is purely decorative.
-      alt: "",
+      alt: "Paperbark tree forest and swamp",
 
       // Determines which part remains visible when cropped.
       objectPosition: "object-center",
@@ -29,8 +31,8 @@ export const heroSlides = [
     placeholderLabel: "Photo placeholder two",
 
     image: {
-      src: "/images/hero/GumTrees1.webp",
-      alt: "",
+      src: `${base}images/hero/GumTrees1.webp`,
+      alt: "Gum trees on a rocky hill",
       objectPosition: "object-center",
     },
   },
@@ -40,8 +42,8 @@ export const heroSlides = [
     placeholderLabel: "Photo placeholder three",
 
     image: {
-      src: "/images/hero/Bingal1.webp",
-      alt: "",
+      src: `${base}images/hero/Bingal1.webp`,
+      alt: "close up shot of a creek bank",
       objectPosition: "object-center",
     },
   },

@@ -1,5 +1,7 @@
 import { href } from "react-router";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 export const applicationSections = [
   {
     id: "membership",
@@ -15,8 +17,8 @@ export const applicationSections = [
     ],
 
     document: {
-      href: "/documents/applications/membership-pdf.pdf",
-      secondaryHref: "/documents/applications/membership-applicationw.docx",
+      href: `${baseUrl}documents/applications/membership-pdf.pdf`,
+      secondaryHref: `${baseUrl}documents/applications/membership-applicationw.docx`,
       title: "Membership application form",
       description:
         "Download the current membership application form.",
@@ -41,8 +43,8 @@ export const applicationSections = [
     ],
 
     document: {
-      href: "/documents/applications/housing-pdf.pdf",
-      secondaryHref: "/documents/applications/housing-word.docx",
+      href: `${baseUrl}documents/applications/housing-pdf.pdf`,
+      secondaryHref: `${baseUrl}documents/applications/housing-word.docx`,
       title: "Housing application form",
       description:
         "Download the current housing application form.",
@@ -67,9 +69,9 @@ export const applicationSections = [
 
     document: {
       href:
-        "/documents/applications/heritage-pdf.pdf",
+        `${baseUrl}documents/applications/heritage-pdf.pdf`,
       secondaryHref:
-        "/documents/applications/heritage-word.docx",
+        `${baseUrl}documents/applications/heritage-word.docx`,
       title: "Cultural heritage application form",
       description:
         "Download the current cultural heritage application form.",
@@ -97,7 +99,7 @@ export const applicationSections = [
     ],
 
     document: {
-      href: "/documents/applications/CLBP.pdf",
+      href: `${baseUrl}documents/applications/CLBP.pdf`,
       title: "Our Story, Vision, and Principles",
       description:
         "Download the current CLBP.",

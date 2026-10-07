@@ -5,9 +5,11 @@ import { PageHeader } from "~/components/sections/PageHeader";
 
 import { notices } from "~/content/notices";
 
+const base = import.meta.env.BASE_URL;
+
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Notices | [Organisation Name]" },
+    { title: "Notices | Jali LALC" },
     {
       name: "description",
       content:
@@ -29,7 +31,7 @@ export default function NoticesPage() {
         notices={notices}
         emptyState={{
           imageSrc:
-            "/images/notices/STAYPOSTED.webp",
+            `${base}images/notices/STAYPOSTED.webp`,
 
           heading: "There are currently no notices",
 

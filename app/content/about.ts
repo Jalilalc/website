@@ -1,5 +1,7 @@
 import type { SlideshowItem } from "../types/slideshow";
 
+const base = import.meta.env.BASE_URL;
+
 export const aboutHeroSlides = [
   {
     id: "about-slide-one",
@@ -12,10 +14,10 @@ export const aboutHeroSlides = [
 
     image: {
       // Do not include "public" in the browser path.
-      src: "/images/content/Ranger1.webp",
+      src: `${base}/images/content/Ranger1.webp`,
 
       // Use an empty string if the photograph is decorative.
-      alt: "",
+      alt: "Image of rangers",
 
       // Adjust this for the subject of the photograph.
       objectPosition: "object-center",
@@ -27,7 +29,7 @@ export const aboutHeroSlides = [
     placeholderLabel: "About photo placeholder two",
 
     image: {
-      src: "/images/content/7.1.webp",
+      src: `${base}images/content/7.1.webp`,
       alt: "",
       objectPosition: "object-center",
     },
@@ -38,7 +40,7 @@ export const aboutHeroSlides = [
     placeholderLabel: "About photo placeholder three",
 
     image: {
-      src: "/images/content/Creek1.webp",
+      src: `${base}images/content/Creek1.webp`,
       alt: "",
       objectPosition: "object-center",
     },

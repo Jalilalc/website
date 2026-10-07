@@ -7,10 +7,10 @@ import { homeIntroductionContent } from "~/content/home";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
+    { title: "Home | Jali LALC" },
     {
       name: "description",
-      content: "Welcome to React Router!",
+      content: "Jali LALC Home Page.",
     },
   ];
 }
