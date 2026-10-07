@@ -75,7 +75,7 @@ export function Layout({
         <link 
           rel="icon"
           type="image/png"
-          hrefLang={`${baseUrl}favicon.png?=6`}
+          href={`${baseUrl}favicon.png?v=6`}
         />
 
         <Meta />
