@@ -1,5 +1,6 @@
 import {
   isRouteErrorResponse,
+  Link,
   Links,
   Meta,
   Outlet,
@@ -33,27 +34,27 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
 
-   {
-    rel: "icon",
-    href: `${baseUrl}favicon.png`,
-  },
-  {
-    rel: "icon",
-    type: "image/webp",
-    sizes: "32x32",
-    href: `${baseUrl}favicon-32x32.png`,
-  },
-  {
-    rel: "icon",
-    type: "image/webp",
-    sizes: "16x16",
-    href: `${baseUrl}favicon-16x16.png`,
-  },
-  {
-    rel: "apple-touch-icon",
-    sizes: "180x180",
-    href: `${baseUrl}apple-touch-icon.png`,
-  },
+  //  {
+  //   rel: "icon",
+  //   href: `${baseUrl}favicon.png`,
+  // },
+  // {
+  //   rel: "icon",
+  //   type: "image/webp",
+  //   sizes: "32x32",
+  //   href: `${baseUrl}favicon-32x32.png`,
+  // },
+  // {
+  //   rel: "icon",
+  //   type: "image/webp",
+  //   sizes: "16x16",
+  //   href: `${baseUrl}favicon-16x16.png`,
+  // },
+  // {
+  //   rel: "apple-touch-icon",
+  //   sizes: "180x180",
+  //   href: `${baseUrl}apple-touch-icon.png`,
+  // },
 ];
 
 export function Layout({
@@ -69,6 +70,12 @@ export function Layout({
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
+        />
+
+        <link 
+          rel="icon"
+          type="image/png"
+          hrefLang={`${baseUrl}favicon.png?=6`}
         />
 
         <Meta />
