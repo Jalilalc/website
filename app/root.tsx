@@ -35,24 +35,24 @@ export const links: Route.LinksFunction = () => [
 
    {
     rel: "icon",
-    href: `${baseUrl}favicon.png`,
+    href: `${baseUrl}favicon.webp`,
   },
   {
     rel: "icon",
     type: "image/png",
     sizes: "32x32",
-    href: `${baseUrl}favicon-32x32.png`,
+    href: `${baseUrl}favicon-32x32.webp`,
   },
   {
     rel: "icon",
     type: "image/png",
     sizes: "16x16",
-    href: `${baseUrl}favicon-16x16.png`,
+    href: `${baseUrl}favicon-16x16.webp`,
   },
   {
     rel: "apple-touch-icon",
     sizes: "180x180",
-    href: `${baseUrl}apple-touch-icon.png`,
+    href: `${baseUrl}apple-touch-icon.webp`,
   },
 ];
 
