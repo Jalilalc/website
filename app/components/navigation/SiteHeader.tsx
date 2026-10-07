@@ -9,6 +9,8 @@ type SiteHeaderProps = {
   readonly variant?: SiteHeaderVariant;
 };
 
+const base = import.meta.env.BASE_URL;
+
 export function SiteHeader({
   variant = "solid",
 }: SiteHeaderProps) {
@@ -65,8 +67,8 @@ export function SiteHeader({
           "
         >
             <img
-              src="/images/brand/JaliLogo.webp"
-              alt=""
+              src={`${base}images/brand/JaliLogo.webp`}
+              alt="Jali LALC Logo"
               className="h-12 w-auto object-contain sm:h-14"
             />
           {/* <span
